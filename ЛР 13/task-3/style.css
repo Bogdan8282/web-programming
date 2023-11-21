@@ -1,0 +1,17 @@
+/* Стилізація для таблиці розкладу уроків */
+.shedule_content {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.shedule_content th, .shedule_content td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.shedule_content th {
+    background-color: #f2f2f2;
+}
+
+/* Додаткові стилі за необхідності */

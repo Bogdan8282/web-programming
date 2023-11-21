@@ -32,8 +32,8 @@
     }
     print '</table>';
 
-    $results->free(); // Звільнити пам'ять від результатів запиту
-    $mysqli->close(); // Закрити з'єднання з базою даних
+    $results->free();
+    $mysqli->close();
     ?>
 </body>
 </html>

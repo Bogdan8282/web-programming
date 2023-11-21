@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Information</title>
+    <style>
+        p{
+            font-size: 22px; /* Adjust the font size as needed */
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ location }} - Інформація про погоду</h1>
+    {% for element in weather_result %}
+        <p>{{ element }}</p>
+    {% endfor %}
+
+    <img src="{{ url_for('static', filename='weather.jpg') }}" alt="Weather Image">
+</body>
+</html>
