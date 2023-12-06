@@ -13,7 +13,7 @@ try {
 }
 
 include_once 'core/Model.php';
-require_once __DIR__ . '/../models/User.php';
+include_once __DIR__ . '/../models/User.php';
 
 $materialsModel = new Model($pdo, 'materials');
 $userModel = new User($pdo, 'users');

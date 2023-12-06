@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         'amount' => $_POST['amount'],
     ];
 
-    $material = new Material($pdo, 'materials');  // Pass the table name 'materials'
+    $material = new Material($pdo, 'materials');
     $material->create($data);
 
     header("Location: materials.php");
